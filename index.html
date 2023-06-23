@@ -8,7 +8,33 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>Tienda de ropa</title>
+    <style>
+      nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+      }
+      .links {
+        display: flex;
+      }
+      li {
+        display: inline;
+        margin-right: 10px;
+      }
+      a {
+        color: #fdf9f9;
+        text-decoration: none;
+      }
+    </style>
 
     <!-- open graph -->
 
@@ -28,8 +54,30 @@
     <link rel="icon" type="image/x-icon" href="img\favicon.ico" />
   </head>
   <body>
-    <h1>TIENDA DE ROPA</h1>
-    <hr />
+    <img
+      src="img\hippo.jpg"
+      alt="nombre tienda"
+      style="width: 150px; height: auto"
+    />
+    <nav>
+      <ul class="navbar">
+        <div>
+          <li><a href="#">Inicio</a></li>
+
+          <li><a href="tabla.html">Sudaderas</a></li>
+
+          <li><a href="#">Servicios</a></li>
+
+          <li><a href="#">Contacto</a></li>
+        </div>
+
+        <form action="/buscar" method="get">
+          <input type="text" name="barra de busqueda" placeholder="Buscar..." />
+
+          <button type="submit">Buscar</button>
+        </form>
+      </ul>
+    </nav>
 
     <!--Menú de la tienda-->
     <ul>
@@ -167,8 +215,7 @@ excepto Islas Canarias y Baleares.
     <!-- Pie de página -->
 
     <footer>
-      <p>Tienda de ropa Devlhope 2023. Todos los derechos reservados.</p>
-      <a href="https://instagram.com">Redes sociales</a>
+    
 
       <!-- Barra de navegación -->
 
@@ -181,8 +228,12 @@ excepto Islas Canarias y Baleares.
           <li><a href="#">política de envíos</a></li>
 
           <li><a href="#">Contacto</a></li>
+
+          <li><a target="_blank" href="https://instagram.com">Redes sociales</a></li>
+        
         </ul>
       </nav>
+      <p>Tienda de ropa Devlhope 2023. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
