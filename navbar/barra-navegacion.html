@@ -15,33 +15,52 @@
         margin: 0;
         padding: 0;
       }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+      }
+      .links {
+        display: flex;
+      }
       li {
         display: inline;
         margin-right: 10px;
       }
       a {
-        color: #fff;
+        color: #fdf9f9;
         text-decoration: none;
+      }
+      
+      .boton-buscar:hover {
+
+        color:green;
+        background-color: white;
+        transition: 0,5s ease-in-out;
+        padding-left: 20px;
+
       }
     </style>
   </head>
   <body>
     <nav>
-      <ul>
-        <li><a href="#">Inicio</a></li>
+      <ul class="navbar">
+        <div>
+          <li><a href="#">Inicio</a></li>
 
-        <li><a href="#">Acerca de</a></li>
+          <li><a href="tabla.html">Sudaderas</a></li>
 
-        <li><a href="#">Servicios</a></li>
+          <li><a href="#">Servicios</a></li>
 
-        <li><a href="#">Contacto</a></li>
+          <li><a href="#">Contacto</a></li>
+        </div>
 
         <form action="/buscar" method="get">
           <input type="text" name="barra de busqueda" placeholder="Buscar..." />
 
-          <button type="submit">Buscar</button>
+          <button class="boton-buscar" type="submit">Buscar</button>
         </form>
       </ul>
     </nav>
+    
   </body>
 </html>
