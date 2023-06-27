@@ -1,0 +1,74 @@
+:root {
+   
+    --background-color: #000000;
+    --background-color-orange: #ff910a;
+    --background-color-yellow: #f4e80a;
+    --background-color-green: #34e60b;
+    --background-color-blue: #2015e9;
+
+
+    /* width */
+
+    --ball-width: 150px;
+    --ball-height: 150px;
+    --border-radius: 0;
+
+    /* padding */
+
+    --padding-1: 5px;
+    --padding-2: 10px;
+    --padding-3: 15px;
+    --padding-4: 20px;
+
+    /* margin */
+
+    --margin-1: 5px;
+    --margin-2: 10px;
+    --margin-3: 15px;
+    --margin-4: 20px;
+
+
+
+}
+    
+    
+
+body {
+    background-color:var(--background-color);
+}
+
+.orange {
+    width:var(--ball-width);
+    height:var(--ball-height);
+    background-color:var(--background-color-orange);
+    padding: var(--padding-1);
+    margin: var(--margin-1);
+    border-radius: var(--border-radius);
+}
+
+.yellow {
+    width:var(--ball-width);
+    height:var(--ball-height);
+    background-color:var(--background-color-yellow);
+    padding: var(--padding-2);
+    margin: var(--margin-2);
+    border-radius: var(--border-radius);
+}
+
+.green {
+    width:var(--ball-width);
+    height:var(--ball-height);
+    background-color:var(--background-color-green);
+    padding: var(--padding-3);
+    margin: var(--margin-3);
+    border-radius: var(--border-radius);
+}  
+
+.blue {
+    width:var(--ball-width);
+    height:var(--ball-height);
+    background-color:var(--background-color-blue);
+    padding: var(--padding-4);
+    margin: var(--margin-4);
+    border-radius: var(--border-radius);
+}
