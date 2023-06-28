@@ -1,0 +1,50 @@
+.sidebar {
+display: flex;
+flex-direction: column;
+position: relative;
+width: 200px;
+height: 740px;
+background-color: #08b59e;
+
+}
+
+.image-logo {
+
+    padding: 10px;
+    text-align: center;
+    margin: 10px;
+
+}
+
+
+.navbar {
+
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+    padding: 1rem;
+}
+
+.link {
+
+    color: #2b2b2b;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+.link:hover {
+
+    color: #2b2bb2;
+    transition: 0,3s;
+}
+
+.avatar {
+    text-align: center;
+    
+}
+
+.username {
+
+    text-align: center;
+}
