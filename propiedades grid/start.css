@@ -1,0 +1,58 @@
+body {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 25% 50% 25%;
+grid-template-areas:
+ "header header header" 
+"section1 section2 sidebar"
+"footer footer sidebar";
+}
+
+
+#green {
+
+    grid-area: header;
+    
+
+
+  }
+  
+  #orange {
+
+    grid-area:footer ;
+
+
+  }
+  
+  #yellow { 
+
+    grid-area: section1;
+    
+    
+  }
+  
+  #red {
+
+    grid-area: section2;
+    
+  }
+  
+  #blue {
+
+    grid-area: sidebar;
+    
+  }
+
+  ul{
+
+display: inline-flex;
+flex-flow:row wrap;
+justify-content: center;
+gap: 4px;
+  }
+
+  li {
+width: 40px;
+height: 25px;
+
+  }

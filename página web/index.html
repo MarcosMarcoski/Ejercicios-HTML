@@ -10,33 +10,9 @@
 
     <link rel="stylesheet" href="style.css" />
 
-    <style>
-      nav {
-        background-color: #333;
-        color: #fff;
-        padding: 10px;
-      }
-      ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-      }
-      .navbar {
-        display: flex;
-        justify-content: space-between;
-      }
-      .links {
-        display: flex;
-      }
-      li {
-        display: inline;
-        margin-right: 10px;
-      }
-      a {
-        color: #fdf9f9;
-        text-decoration: none;
-      }
-    </style>
+    <!-- título -->
+
+    <title>HIPPO</title>
 
     <!-- open graph -->
 
@@ -53,189 +29,56 @@
     />
     <meta name="author" content="Marcos de Diego" />
 
-    <link rel="icon" type="image/x-icon" href="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\favicon.ico" />
-  </head>
-  <body>
-    <img
-      class="marconegro"
-      src="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\hippo.jpg"
-      alt="nombre tienda"
-      style="width: 100px; height: auto"
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\favicon.ico"
     />
+  </head>
+
+  <body>
+    <!-- botones registro -->
+    <div class="botones-cabecera">
+      <button class="registro">Regístrate</button>
+
+      <button class="registro">Iniciar sesión</button>
+    </div>
+    <!-- cabecera -->
+    <header>
+      <div class="cabecera">
+        <a class="link-imagen"
+          href="file:///C:/Users/marco/Documents/Develhope/git/proyecto-pagina-web/p%C3%A1gina%20web/index.html"
+          ><img 
+            src="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\hippo.jpg"
+            alt="nombre tienda"
+            style="width: 180px; height: auto"
+          />
+        </a>
+
+        <img
+          class="cabecera"
+          src="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\logo hippo.jpg"
+          alt="logo hippo"
+          style="width: 320px; height: auto"
+        />
+      </div>
+    </header>
+
+    <!-- navbar -->
+
     <nav>
-      <ul class="navbar">
-        <div>
-          <li><a href="#">Inicio</a></li>
-
-          <li><a href="tabla.html">Sudaderas</a></li>
-
-          <li><a href="#">Servicios</a></li>
-
-          <li><a href="#">Contacto</a></li>
-        </div>
-
-        <form action="/buscar" method="get">
-          <input type="text" name="barra de busqueda" placeholder="Buscar..." />
-
-          <button type="submit">Buscar</button>
-        </form>
-      </ul>
+      <a href="#" class="nav-link">Inicio</a>
+      <a href="#" class="nav-link">Sudaderas</a>
+      <a href="#" class="nav-link">Camisetas</a>
+      <a href="#" class="nav-link">Gorras</a>
+      <a href="#" class="nav-link">Complementos</a>
     </nav>
 
-    <!--Menú de la tienda-->
-    <ul>
-      <li>Sudaderas</li>
-      <img
-        src="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\sudadera negra foto.jpg"
-        alt="sudadera negra"
-        style="width: 200px; height: auto"
-      />
-      <a href="https://google.com">consultar Colores disponibles</a>
-
-      <li>Camisetas</li>
-      <img
-        src="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\camiseta-naranja.jpg"
-        alt="camiseta naranja"
-        style="width: 200px; height: auto"
-      />
-
-      <li>Gorras</li>
-      <img
-        src="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\gorra-trucker-negra.jpg"
-        alt="gorra negra"
-        style="width: 200px; height: auto"
-      />
-    </ul>
-    <!-- Política de envíos -->
-    <pre>
-
-Pedidos GRATIS a partir de 50€
-excepto Islas Canarias y Baleares.
-
- </pre
-    >
-    <!-- Registro clientes -->
-    <hr />
-
-    <h1>Regístrate ya!</h1>
-    <form>
-      <ul>
-        <li><label for="nombre">Nombre y apellidos</label></li>
-        <input type="text" id="nombre" placeholder="Nombre y apellidos" />
-
-        <br />
-        <br />
-
-        <li><label for="fecha de nacimiento">Fecha de nacimiento</label></li>
-        <input type="date" id="form-dob" name="dob" />
-
-        <br />
-        <br />
-
-        <li><label for="telefono">Teléfono</label></li>
-        <input type="text" id="telefono" />
-
-        <br />
-        <br />
-
-        <li><label for="apellido">Email</label></li>
-        <input type="text" id="Email" />
-
-        <br />
-        <br />
-
-        <li><label for="contraseña">Contraseña</label></li>
-        <input type="text" id="contraseña" />
-
-        <br />
-        <br />
-
-        <li><label for="tarjeta de crédito">Tarjeta de crédito</label></li>
-        <input type="text" id="Tarjeta de crédito" />
-
-        <br />
-        <br />
-
-        <li><label for="cvc">Cvc</label></li>
-        <input type="text" id="cvc" />
-
-        <br />
-        <br />
-
-        <li><label for="fecha de caducidad">Fecha de caducidad</label></li>
-        <input type="date" id="fecha de caducidad" name="fecha de caducidad" />
-
-        <br />
-        <br />
-
-        <li><label for="dirección">Dirección</label></li>
-        <input type="text" id="dirección" />
-
-        <br />
-        <br />
-
-        <li><label for="comentarios">Escribe tu comentario</label></li>
-        <br />
-        <textarea
-          name="comentarios"
-          id="comentarios"
-          cols="30"
-          rows="10"
-        ></textarea>
-      </ul>
-      <br />
-      <button type="submit">Enviar</button>
-    </form>
-
-    <!-- Seleccionar tu plan -->
-
-    <form>
-      <h2>Selecciona tu plan</h2>
-
-      <input type="radio" name="plan" id="plan-gratis" value="free" />
-      <label for="plan-free">Plan Gratuito</label>
-      <br />
-
-      <input type="radio" name="plan" id="plan-basico" value="basic" />
-      <label for="plan-basic">Plan Básico - 10€/mes</label>
-      <br />
-
-      <input type="radio" name="plan" id="plan-standard" value="standard" />
-      <label for="plan-estándar">Plan Estándar - 20€/mes</label>
-      <br />
-
-      <input type="radio" name="plan" id="plan-premium" value="premium" />
-      <label for="plan-premium">Plan Premium - 30€/mes</label>
-      <br />
-
-      <input type="checkbox" id="plan-pro" name="plan" value="pro" />
-      <label for="plan-pro">Plan Pro - Precio personalizado</label>
-      <br />
-
-      <input type="submit" value="Seleccionar" />
-    </form>
-
-    <!-- Pie de página -->
-
-    <footer>
-      <!-- Barra de navegación -->
-
-      <nav>
-        <ul>
-          <li><a href="#">Trabaja con nosotros</a></li>
-
-          <li><a href="#">¿Quiénes somos?</a></li>
-
-          <li><a href="#">política de envíos</a></li>
-
-          <li><a href="#">Contacto</a></li>
-
-          <li>
-            <a target="_blank" href="https://instagram.com">Redes sociales</a>
-          </li>
-        </ul>
-      </nav>
-      <p>Tienda de ropa Devlhope 2023. Todos los derechos reservados.</p>
-    </footer>
+    <img
+      class="foto-inicio"
+      src="C:\Users\marco\Documents\Develhope\git\proyecto-pagina-web\img\foto hippo planta.jpg"
+      alt="foto inicio"
+      style="width: 100%; height: auto"
+    />
   </body>
 </html>
