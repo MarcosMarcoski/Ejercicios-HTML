@@ -1,0 +1,51 @@
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+  }
+  .links {
+    display: flex;
+  }
+  li {
+    display: inline;
+    margin-right: 10px;
+  }
+  a {
+    color: #fdf9f9;
+    text-decoration: none;
+  }
+  
+  .boton-buscar:hover {
+
+    color:green;
+    background-color: white;
+    transition: 0,5s ease-in-out;
+    padding-left: 20px;
+
+  }
+
+  .hamburguesa {
+    display: none;
+  }
+
+  @media only screen and (max-width:768px){
+.links {
+    display: none;
+
+}
+
+.hamburguesa {
+
+    display: flex;
+}
+
+  }
