@@ -1,0 +1,64 @@
+//variables
+$color-principal: red;
+$color-secundario: green;
+$color-terciario: blue;
+
+
+
+body {
+    display: flex;
+
+}
+
+div {
+
+
+    border: 1px solid $color-principal;
+    width: 210vh;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px;
+
+    h1 {
+
+        display: flex;
+        flex-direction: column;
+        color: $color-secundario;
+        text-decoration: underline;
+        text-align: center;
+
+    }
+
+}
+
+section {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $color-secundario;
+    text-align: center;
+    margin: 30px;
+
+
+
+    article {
+        width: 200vh;
+        height: 13vh;
+        border: 1px solid $color-secundario;
+
+    }
+
+    .blue {
+        color: $color-terciario;
+    }
+
+    .red {
+
+        color: $color-principal;
+    }
+
+
+
+}
