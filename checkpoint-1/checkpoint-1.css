@@ -1,0 +1,55 @@
+body {
+  display: flex;
+  background-color: white;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  height: 100vh;
+  background-color: blue;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.rectangulo {
+  width: 90%;
+  height: 20px;
+  background-color: white;
+}
+.menu {
+  width: 5vw;
+}
+.container-general {
+  width: 75vw;
+}
+
+.cuadrado {
+  display: flex;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(196, 196, 196);
+  text-align: center;
+  border-radius: 5px;
+  margin: auto;
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
+  .menu {
+    flex-direction: column;
+    width: 100vw;
+  }
+
+  .cuadrado {add 
+  }
+}
