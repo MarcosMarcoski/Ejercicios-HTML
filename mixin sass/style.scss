@@ -1,0 +1,94 @@
+@mixin blue_text {
+
+    color: blue;
+    font-size: 1rem;
+    text-align: center;
+}
+
+@mixin red_text {
+
+    color: red;
+    font-size: 1rem;
+    text-align: center;
+
+}
+
+@mixin pie_pagina {
+
+    color: green;
+    border-color: green 1px solid;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+body {
+
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    display: flex;
+    flex-direction: column;
+    border: red solid 1px;
+    width: 300px;
+    height: 50vh;
+    
+    
+
+    h1 {
+
+        text-align: center;
+        color: green;
+        text-decoration: underline;
+
+    }
+
+    .primera-section {
+
+        display: flex;
+        flex-direction: column
+        justify-content: space-between;
+        align-items: center;
+        
+
+
+    }
+
+    .segunda-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+
+    .blue {
+
+        @include blue_text()
+    }
+
+    .red {
+
+        @include red_text()
+    }
+
+    .pie {
+
+        @include pie_pagina()
+    }
+
+}
+
+article {
+
+    border: 1px green solid;
+    align-items: center;
+    
+
+}
