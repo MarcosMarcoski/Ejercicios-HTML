@@ -7,7 +7,7 @@ div {
   display: flex;
   flex-direction: column;
   border: red solid 1px;
-  width: 100vw;
+  width: 300px;
   height: 50vh;
 }
 div h1 {
@@ -17,11 +17,9 @@ div h1 {
 }
 div .primera-section {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  width: 100vw;
-  height: 300px;
 }
 div .segunda-section {
   display: flex;
@@ -29,21 +27,18 @@ div .segunda-section {
   justify-content: center;
   align-items: center;
 }
-div article {
-  text-align: center;
-}
 div .blue {
   color: blue;
   font-size: 1rem;
-  border: green 1px solid;
+  border-color: green;
 }
 div .red {
   color: red;
   font-size: 1rem;
-  border: green 1px solid;
+  border-color: green;
 }
 div .pie {
   color: green;
   font-size: 24px;
-  border: green 1px solid;
-}/*# sourceMappingURL=style.css.map */
+  border-color: green 1px solid;
+}/*# sourceMappingURL=funciones.css.map */

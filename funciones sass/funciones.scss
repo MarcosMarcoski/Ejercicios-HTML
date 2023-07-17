@@ -1,8 +1,18 @@
+@use "sass:math";
+
 @mixin ejercicio ($color, $font-size, $border-color) {
 
     color: $color;
     font-size: $font-size;
-    border:$border-color;
+    border-color:$border-color;
+}
+
+@function pixeles-rem ($pixeles){
+
+    $rem: math.div($pixeles, 16) * 1rem;
+
+    @return $rem;
+
 }
    
 
@@ -16,7 +26,7 @@ div {
     display: flex;
     flex-direction: column;
     border: red solid 1px;
-    width: 100vw;
+    width: 300px;
     height: 50vh;
     
     
@@ -32,11 +42,9 @@ div {
     .primera-section {
 
         display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        flex-direction: column;
+        justify-content: space-between;
         align-items: center;
-        width: 100vw;
-        height: 300px;
         
 
 
@@ -53,21 +61,15 @@ div {
 
     }
 
-    article{
-
-        text-align: center;
-    }
-        
-
 
     .blue {
 
-        @include ejercicio(blue, 1rem, green 1px solid);
+        @include ejercicio(blue, 1rem, green);
     }
 
     .red {
 
-        @include ejercicio(red, 1rem, green 1px solid);
+        @include ejercicio(red, 1rem, green);
     }
 
     .pie {
