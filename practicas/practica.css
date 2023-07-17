@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+}
+body {
+    background-color: rgb(131, 123, 123);
+    display: flex;
+
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(204, 193, 193);
+    height: 100vw;
+    width: 110px;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5px;
+   
+    
+    
+}
+
+.mr {
+    display: flex;
+    height: 20px;
+    width: 30px;
+    background-color: gray;
+    text-align: center;
+    padding: 13px;
+    border-radius: 10px;
+    
+    
+    
+}
+
+.circulo {
+    
+    background-color: gray;
+    padding: 20px;
+    border-radius: 30px;
+}
+
+.container-general {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(204, 193, 193);
+   
+
+
+}
+
+input {
+    display: flex;
+    align-self: self-start;
+    margin: 20px;
+    
+
+    
+}
+
+.lateral {
+display: flex;
+flex-direction: column;
+background-color: blue;
+
+width: 300px;
+align-items: center;
+padding: 30px;
+
+
+
+}
+
+.cuadro-blanco{
+
+    background-color: white;
+    width: 70px;
+    height: 10px;
+    align-items: center;
+    
+}
+
+.circulo-fuera {
+
+    padding: 20px;
+    border-radius: 30px;
+    height: 20px;
+    width: 20px;
+    
+
+}
+
+footer {
+display: flex;
+flex-direction: row;
+
+}
+
+.circulo-footer{
+
+    background-color: gray;
+    padding: 20px;
+    border-radius: 30px;  
+}
+
+@media screen and (max-width:320px){
+    *{
+        margin: 0;
+    }
+body {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.lateral{
+
+    display: none;
+}
+
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    
+    
+}
+
+.mr{
+    align-self: flex-start;
+}
+.circulo{
+    display: none;
+}
+}
+.container-general{
+
+    width: 100vw;
+    padding: 10px;
+    margin: 0;
+    
+
+
+}
+
+
+
+    

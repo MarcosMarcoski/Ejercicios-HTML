@@ -2,15 +2,14 @@
 
     color: blue;
     font-size: 1rem;
-    text-align: center;
+    border-color: green 1px solid;
 }
 
 @mixin red_text {
 
     color: red;
     font-size: 1rem;
-    text-align: center;
-
+    border-color: green 1px solid;
 }
 
 @mixin pie_pagina {
@@ -18,9 +17,8 @@
     color: green;
     border-color: green 1px solid;
     font-size: 24px;
-    text-align: center;
-
 }
+   
 
 body {
 
@@ -48,7 +46,7 @@ div {
     .primera-section {
 
         display: flex;
-        flex-direction: column
+        flex-direction: column;
         justify-content: space-between;
         align-items: center;
         
