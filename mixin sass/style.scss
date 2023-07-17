@@ -1,22 +1,8 @@
-@mixin blue_text {
+@mixin ejercicio ($color, $font-size, $border-color) {
 
-    color: blue;
-    font-size: 1rem;
-    border-color: green 1px solid;
-}
-
-@mixin red_text {
-
-    color: red;
-    font-size: 1rem;
-    border-color: green 1px solid;
-}
-
-@mixin pie_pagina {
-
-    color: green;
-    border-color: green 1px solid;
-    font-size: 24px;
+    color: $color;
+    font-size: $font-size;
+    border-color:$border-color;
 }
    
 
@@ -68,17 +54,17 @@ div {
 
     .blue {
 
-        @include blue_text()
+        @include ejercicio(blue, 1rem, green);
     }
 
     .red {
 
-        @include red_text()
+        @include ejercicio(red, 1rem, -green)
     }
 
     .pie {
 
-        @include pie_pagina()
+        @include ejercicio(green,24px, green 1px solid)
     }
 
 }
