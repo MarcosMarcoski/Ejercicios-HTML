@@ -1,0 +1,63 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.principal {
+  display: flex;
+  flex-direction: column;
+  border: red solid 1px;
+  width: 100vw;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+}
+.principal h2, .principal h1 {
+  text-align: center;
+  color: green;
+}
+.principal h1 {
+  text-decoration: underline;
+}
+.principal h2 {
+  border: red 1px solid;
+  width: 50rem;
+  height: 100px;
+}
+.principal .primera-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+}
+.principal .segunda-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.principal article {
+  text-align: center;
+}
+.principal .blue {
+  color: blue;
+  font-size: 1rem;
+  border: green 1px solid;
+}
+.principal .red {
+  color: red;
+  font-size: 1rem;
+  border: green 1px solid;
+}
+.principal .pie {
+  color: green;
+  font-size: 1.5rem;
+  border: green 1px solid;
+}
+.principal .cards {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}/*# sourceMappingURL=flow-control.css.map */

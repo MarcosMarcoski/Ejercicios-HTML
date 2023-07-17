@@ -1,0 +1,153 @@
+@import "_funcion-rem";
+
+$color-primario: green;
+$color-secundario: red;
+$color-terciario: blue;
+
+$base-color: #000000;
+$color-text: #ffffff;
+
+
+@mixin ejercicio ($color, $font-size, $border-color) {
+
+    color: $color;
+    font-size: $font-size;
+    border: $border-color;
+}
+
+
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+}
+
+.principal {
+
+    display: flex;
+    flex-direction: column;
+    border: red solid 1px;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+
+    %text {
+
+        text-align: center;
+        color: green;
+
+    }
+
+
+
+
+
+    h1 {
+
+        @extend %text;
+        text-decoration: underline;
+
+    }
+
+    h2 {
+
+        border: red 1px solid;
+        width: 50rem;
+        height: 100px;
+        @extend %text
+    }
+
+    .primera-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 300px;
+
+
+
+
+    }
+
+    .segunda-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    article {
+
+        text-align: center;
+    }
+
+
+
+    .blue {
+
+        @include ejercicio(blue, 1rem, green 1px solid);
+    }
+
+    .red {
+
+        @include ejercicio(red, 1rem, green 1px solid);
+    }
+
+    .pie {
+
+        @include ejercicio(green, pixeles-rem(24), green 1px solid);
+
+
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+    }
+
+    @each $size in (1, 2, 3) {
+        .fs-#{$size}rem {
+            font-size: $size + rem;
+            width: pixeles-rem(45px);
+            height: pixeles-rem(45px);
+        }
+
+    }
+
+    @for $i from 1 through 20 {
+        $box-color: darken($color-text, $i * 5);
+        $box-color-text: lighten($base-color, $i * 5);
+
+        .box-#{$i} {
+            background-color: $box-color;
+            color: $box-color-text;
+
+            @if $i ==10 {
+                background-color: $color-terciario;
+                color: $color-secundario;
+                justify-content: start;
+                align-items: start;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .fs-1rem,
+    .fs-2rem {
+        justify-content: start;
+        align-items: start;
+    }
+}
+
+// Tendría que ser así pero no me compila bien, no sé que pasa.
