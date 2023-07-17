@@ -1,20 +1,13 @@
-@use "sass:math";
+@import "_funcion-rem";
+
 
 @mixin ejercicio ($color, $font-size, $border-color) {
 
     color: $color;
     font-size: $font-size;
-    border-color:$border-color;
+    border:$border-color;
 }
 
-@function pixeles-rem ($pixeles){
-
-    $rem: math.div($pixeles, 16) * 1rem;
-
-    @return $rem;
-
-}
-   
 
 body {
 
@@ -26,7 +19,7 @@ div {
     display: flex;
     flex-direction: column;
     border: red solid 1px;
-    width: 300px;
+    width: 100vw;
     height: 50vh;
     
     
@@ -42,9 +35,11 @@ div {
     .primera-section {
 
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
+        width: 100vw;
+        height: 300px;
         
 
 
@@ -61,20 +56,28 @@ div {
 
     }
 
+    article{
+
+        text-align: center;
+    }
+        
+
 
     .blue {
 
-        @include ejercicio(blue, 1rem, green);
+        @include ejercicio(blue, 1rem, green 1px solid);
     }
 
     .red {
 
-        @include ejercicio(red, 1rem, green);
+        @include ejercicio(red, 1rem, green 1px solid);
     }
 
     .pie {
 
-        @include ejercicio(green,24px, green 1px solid);
+        @include ejercicio(green,pixeles-rem(24) , green 1px solid);
+       
+
     }
 
 }
