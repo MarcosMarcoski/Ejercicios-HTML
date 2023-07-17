@@ -1,0 +1,105 @@
+@import "_funcion-rem";
+
+
+@mixin ejercicio ($color, $font-size, $border-color) {
+
+    color: $color;
+    font-size: $font-size;
+    border:$border-color;
+}
+
+
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+
+    display: flex;
+    flex-direction: column;
+    border: red solid 1px;
+    width: 100vw;
+    height: 50vh;
+    align-items: center;
+    justify-content: space-around;
+
+    %text {
+
+        text-align: center;
+        color: green;
+       
+    }
+
+    
+    
+    
+
+    h1 {
+
+        @extend %text;
+        text-decoration: underline;
+
+    }
+
+    h2 {
+        
+        border: red 1px solid;
+        width: 50rem;
+        height: 100px;
+       @extend %text  
+    }
+
+    .primera-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100vw;
+        height: 300px;
+        
+        
+
+
+    }
+
+    .segunda-section {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+
+
+    }
+
+    article{
+
+        text-align: center;
+    }
+        
+
+
+    .blue {
+
+        @include ejercicio(blue, 1rem, green 1px solid);
+    }
+
+    .red {
+
+        @include ejercicio(red, 1rem, green 1px solid);
+    }
+
+    .pie {
+
+        @include ejercicio(green,pixeles-rem(24) , green 1px solid);
+       
+
+    }
+
+}

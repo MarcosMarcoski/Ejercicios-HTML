@@ -1,0 +1,58 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  border: red solid 1px;
+  width: 100vw;
+  height: 50vh;
+  align-items: center;
+  justify-content: space-around;
+}
+div h2, div h1 {
+  text-align: center;
+  color: green;
+}
+div h1 {
+  text-decoration: underline;
+}
+div h2 {
+  border: red 1px solid;
+  width: 50rem;
+  height: 100px;
+}
+div .primera-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 300px;
+}
+div .segunda-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div article {
+  text-align: center;
+}
+div .blue {
+  color: blue;
+  font-size: 1rem;
+  border: green 1px solid;
+}
+div .red {
+  color: red;
+  font-size: 1rem;
+  border: green 1px solid;
+}
+div .pie {
+  color: green;
+  font-size: 1.5rem;
+  border: green 1px solid;
+}/*# sourceMappingURL=selectores.css.map */
